@@ -68,57 +68,7 @@
 </html>
 
 
-        #settingsPanel, #roomDetailPanel {
-            margin-top: 20px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            background-color: #fff;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        #roomButtonsContainer {
-            margin-top: 20px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .room-button {
-            width: 100px;
-            height: 60px;
-            margin: 10px;
-            font-size: 18px;
-            font-weight: bold;
-            color: white;
-            background-color: #ccc; /* 기본 회색 */
-        }
-
-        .room-button.checked-in {
-            background-color: red;
-        }
-
-        .room-button.checked-out {
-            background-color: green;
-        }
-
-        #roomDetailPanel button {
-            margin-top: 10px;
-        }
-
-        #roomDetailPanel textarea, #roomDetailPanel input {
-            width: 95%;
-            padding: 8px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-    </style>
-</head>
-<body>
+      
 
     <h1>방 번호 관리 시스템</h1>
     <button id="settingsBtn">설정</button>

@@ -28,47 +28,58 @@
             background-color: #007BFF;
             color: white;
         }
-        <!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>메뉴 버튼 예제</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
+
+        #settingsPanel, #roomDetailPanel {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
         }
-        .menu {
+
+        .hidden {
+            display: none;
+        }
+
+        #roomButtonsContainer {
+            margin-top: 20px;
             display: flex;
-            justify-content: center;
-            gap: 20px;
+            flex-wrap: wrap;
         }
-        .menu button {
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            background-color: #4CAF50;
+
+        .room-button {
+            width: 100px;
+            height: 60px;
+            margin: 10px;
+            font-size: 18px;
+            font-weight: bold;
             color: white;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            background-color: #ccc; /* 기본 회색 */
         }
-        .menu button:hover {
-            background-color: #45a049;
+
+        .room-button.checked-in {
+            background-color: red;
+        }
+
+        .room-button.checked-out {
+            background-color: green;
+        }
+
+        #roomDetailPanel button {
+            margin-top: 10px;
+        }
+
+        #roomDetailPanel textarea, #roomDetailPanel input {
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
-    <h1>메뉴</h1>
-    <div class="menu">
-        <button onclick="location.href='https://coollimej-netizen.github.io/my-cat/'">공식홈</button>
-    </div>
-</body>
-</html>
-
-
-      
 
     <h1>방 번호 관리 시스템</h1>
     <button id="settingsBtn">설정</button>
@@ -251,5 +262,43 @@
             loadRooms();
         });
     </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>메뉴 버튼 예제</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .menu {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .menu button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .menu button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>메뉴</h1>
+    <div class="menu">
+        <button onclick="location.href='https://coollimej-netizen.github.io/my-cat/'">애용공식</button>
+    </div>
 </body>
 </html>
